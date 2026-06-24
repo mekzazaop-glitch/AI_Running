@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RunForm AI – Features</title>
+  <meta name="description" content="Explore the AI‑powered running form analysis features.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero feature-hero">
+    <div class="container">
+      <h1 class="hero__title">AI‑Powered Running Form Analysis</h1>
+      <p class="hero__subtitle">Upload a short video and instantly see 18+ biomechanical metrics with personalized coaching.</p>
+      <img src="hero_mock.png" alt="Hero illustration" class="hero__image" />
+    </div>
+  </section>
+
+  <!-- Upload / Analysis Section -->
+  <section class="analysis">
+    <div class="container">
+      <h2 class="section-title">Upload your run</h2>
+      <input type="file" id="videoInput" accept="video/*" class="file-input" />
+      <button id="analyzeBtn" class="btn-primary">Analyze</button>
+      <div id="result" class="result hidden">
+        <canvas id="metricsChart" width="400" height="200"></canvas>
+        <pre id="metricsJson" class="json-output"></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="section features" id="features">
+    <div class="container">
+      <h2 class="section__title">Key Features</h2>
+      <div class="features__grid">
+        <div class="feature-card">
+          <h3>Precise Pose Analysis</h3>
+          <p>AI measures 18+ metrics including cadence, foot strike angle, knee angle, and vertical oscillation.</p>
+        </div>
+        <div class="feature-card">
+          <h3>AI Coaching Summary</h3>
+          <p>Personalized improvement points and strengthening exercises based on your results.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Side &amp; Back Views</h3>
+          <p>Choose side or back perspective to capture a comprehensive gait profile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="feature.js"></script>
+</body>
+</html>
